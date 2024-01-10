@@ -3,6 +3,14 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 label{
     font-weight: bold;
     padding: 0.5rem;
@@ -10,6 +18,7 @@ label{
     display: inline-flex;
 }
 input{
+    font-family: consolas;
     border-radius: 0.5rem;
     /* border: 2px solid blue; */
     padding: 0.3rem 0.3rem;
@@ -21,15 +30,18 @@ select{
     border-radius: 0.5rem;
     font-family: consolas;
     outline: none;
-    width: 11rem;
+    width: 10.7rem;
     padding: 0.3rem 0.3rem;
 }
 select:hover, input:hover{
-    box-shadow: 0 1rem 2rem 0 rgba(119, 124, 124, 0.325), 0 6px 20px 0 rgba(117, 121, 121, 0.325);
+    box-shadow: 0 0.1rem 0.1rem 0 rgba(119, 124, 124, 0.325), 0 1px 1px 0 rgba(117, 121, 121, 0.325);
 }
 .main_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
-    box-shadow: 0 1rem 2rem 0 rgba(119, 124, 124, 0.325), 0 6px 20px 0 rgba(117, 121, 121, 0.325);
+    box-shadow: 0 0.5px 0.5px 0 rgba(119, 124, 124, 0.325), 0 0.5px 0.5px 0 rgba(117, 121, 121, 0.325),0 0.5px 0.5px 0 rgba(119, 124, 124, 0.325);
     border-radius: 1rem;
     padding-top: 0.1rem;
     padding-bottom: 0.5rem;
@@ -46,15 +58,15 @@ select:hover, input:hover{
     z-index: -1;
 }
 .title{
-    margin-top: 1.5rem;
-    box-shadow: 0 1rem 2rem 0 rgba(119, 124, 124, 0.325), 0 6px 20px 0 rgba(117, 121, 121, 0.325);
+    margin-top: 3rem;
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(119, 124, 124, 0.325), 0 0.5rem 0.5rem 0 rgba(117, 121, 121, 0.325);
     padding: 0.9rem 0.9rem;
     text-align: center;
     font-size: medium;
     font-family: consolas;
     width: 23rem;
     height: 28rem;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 10px;
     z-index: 1;
 }
@@ -74,15 +86,23 @@ select:hover, input:hover{
     box-shadow: 0 1rem 2rem 0 rgba(119, 124, 124, 0.325), 0 6px 20px 0 rgba(117, 121, 121, 0.325);
 }
 .add_button{
-    padding: 0.5rem 0.5rem;
-    background-color: rgba(8, 97, 199, 0.691);
+    padding: 0.3rem 0.5rem;
+    border: 2px solid rgba(8, 97, 199, 0.691);
     border-radius: 5px;
     width: 5rem;
     height: 2rem;
     margin-top: 0.5rem;
     margin-left: 8rem;
-    color: white;
     font-family: consolas;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: bold;  
+}
+.add_button:hover{
+    background-color: rgba(8, 97, 199, 0.691);
+    color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

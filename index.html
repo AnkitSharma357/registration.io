@@ -14,41 +14,42 @@
             <div class="userinformation">
                 <div class="feilds">
                     <label>Name</label>
-                    <input type="text" placeholder="name"></input><br>
+                    <input type="text" placeholder="name" class="name"></input><br>
     
                     <label>Mobile</label>
-                    <input type="number" placeholder="phone"></input><br>
+                    <input type="number" placeholder="phone" class="phone"></input><br>
     
                     <label>Suitable Day</label>
-                    <select>
-                        <option value="Sunday">Sunday</option>
-                        <option value="Monday">Monday</option>
-                        <option value="Tuesday">Tuesday</option>
-                        <option value="Wednesday">Wednesday</option>
-                        <option value="Thursday">Thursday</option>
-                        <option value="Friday">Friday</option>
-                        <option value="Saturday">Saturday</option>
+                    <select class="Suitable_day">
+                        <option value="Sunday" class="Suitable Day">Sunday</option>
+                        <option value="Monday" class="Suitable Day">Monday</option>
+                        <option value="Tuesday" class="Suitable Day">Tuesday</option>
+                        <option value="Wednesday" class="Suitable Day">Wednesday</option>
+                        <option value="Thursday" class="Suitable Day">Thursday</option>
+                        <option value="Friday" class="Suitable Day">Friday</option>
+                        <option value="Saturday" class="Suitable Day">Saturday</option>
                     </select><br>
     
                     <label>Area</label>
-                    <input type="text" placeholder="area"></input><br>
+                    <input type="text" placeholder="area" class="Area"></input><br>
     
                     <label>Facilitator</label>
-                    <input type="text" placeholder="Facilitator"></input><br>
+                    <input type="text" placeholder="Facilitator" class="Facilitator"></input><br>
     
                     <label>Program</label>
-                    <input type="text" placeholder="program"></input><br>
+                    <input type="text" placeholder="program" class="program_attend"></input><br>
     
                 </div>
                 <div class="commnets_section">
                     <textarea  class="textarea" placeholder="write some comments" cols="10" rows="10"></textarea>
                 </div>
-                <div class="add_button">
+                <div class="add_button" onclick="fetch_details()">
                     +Add
                 </div>
             </div>
     </center>
 
     </div>
+    <script src="registration.js"></script>
 </body>
 </html>
